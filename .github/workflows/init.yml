@@ -1,5 +1,5 @@
+# Initializes the "build and deploy" workflow to have access to github secrets in that workflow
 name: Init
-description: Initializes the "build and deploy" workflow to have access to github secrets in that workflow
 
 on:
   push:
