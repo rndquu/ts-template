@@ -7,7 +7,7 @@ This template repository includes support for the following:
 - Conventional Commits
 - Automatic deployment to Cloudflare Pages
 
-## Testing
+## Testing!
 
 ### Cypress
 
