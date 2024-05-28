@@ -8,3 +8,5 @@ mainModule()
   .catch((error) => {
     console.error(error);
   });
+
+const v3 = ``;

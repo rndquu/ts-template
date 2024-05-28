@@ -16,3 +16,5 @@ export async function server() {
   });
   console.log(`http://localhost:${port}`);
 }
+
+const v2 = "";
