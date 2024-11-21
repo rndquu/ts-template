@@ -43,29 +43,8 @@ async function main() {
           }
         );
       });
-
-      // core.setFailed(`${violations.length} empty string${violations.length > 1 ? "s" : ""} detected in the code.`);
-
-      await octokit.rest.checks.create({
-        owner,
-        repo,
-        name: "Empty String Check",
-        head_sha: headSha,
-        status: "completed",
-        conclusion: violations.length > 0 ? "failure" : "success",
-        output: {
-          title: "Empty String Check Results",
-          summary: `Found ${violations.length} violation${violations.length !== 1 ? "s" : ""}`,
-          annotations: violations.map((v) => ({
-            path: v.file,
-            start_line: v.line,
-            end_line: v.line,
-            annotation_level: "warning",
-            message: "Empty string found",
-            raw_details: v.content,
-          })),
-        },
-      });
+      
+      core.setFailed(`${violations.length} empty string${violations.length > 1 ? "s" : ""} detected in the code.`);
     } else {
       core.info("No empty strings found.");
     }
