@@ -2,6 +2,8 @@ export async function mainModule() {
   console.log(`Hello from mainModule`);
 }
 
+const v = "";
+
 mainModule()
   .then(() => {
     console.log("mainModule loaded");
@@ -9,3 +11,5 @@ mainModule()
   .catch((error) => {
     console.error(error);
   });
+
+const v2 = "";
