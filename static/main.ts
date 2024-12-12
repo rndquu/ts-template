@@ -2,7 +2,7 @@ export async function mainModule() {
   console.log(`Hello from mainModule`);
 }
 
-const v = '';
+const v = ``;
 
 mainModule()
   .then(() => {
