@@ -3,6 +3,8 @@ import { initializeState } from "./on-load";
 
 setupRouter();
 
+const v = "";
+
 export async function mainModule() {
   try {
     await initializeState();
